@@ -1,0 +1,149 @@
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between each form element */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px; /* Adjust to your desired max width */
+    margin: 0 auto; /* Center align the search bar */
+  }
+  
+  .search-bar label {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 100%; /* Full width for each label */
+  }
+  
+  .search-bar input[type="text"],
+  .search-bar select {
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar input[type="text"]:focus,
+  .search-bar select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  .search-bar select {
+    -webkit-appearance: none; /* Remove default styling for better consistency */
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"%3E%3Cpath d="M0 0l4 4 4-4z" fill="%23666" /%3E%3C/svg%3E') no-repeat right 0.7rem center;
+    background-size: 8px 6px;
+  }
+  
+  .search-bar input[type="text"]::placeholder {
+    color: #aaa;
+  }
+  
+  .search-bar input[type="text"]:focus::placeholder {
+    color: transparent;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  /* Update Form Container */
+.update-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  /* Form Heading */
+  .update-form h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Form Elements */
+  .update-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .update-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  
+  .update-form input[type="text"],
+  .update-form select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .update-form input[type="text"]:focus,
+  .update-form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  .update-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .update-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .update-form button:active {
+    transform: scale(0.98);
+  }
+  
+  .update-form button[type="button"] {
+    background-color: #6c757d;
+  }
+  
+  .update-form button[type="button"]:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .update-form {
+      padding: 1rem;
+    }
+  }
+  
